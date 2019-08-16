@@ -1,1 +1,50 @@
 // Navigation Styles here
+
+.navBar{
+    .bus {
+        width: 57%;
+        margin-left: 300px;
+        @media @phone {
+            margin-left: 30px;
+            margin-right: 30px;
+            width: 90%;
+        }
+    }
+    .navigation {
+        display: flex;
+        border-bottom: 2px dashed @navigation-border;
+        width: 70%;
+        margin-left: 190px;
+        padding: 20px;
+        align-items: center;
+        @media @phone {
+            margin-left: 20px;
+            width: 100%;
+            padding: 0px;
+        }
+    }
+    h1 {
+        margin-left: 85px;
+        width: 100%;
+        margin-right: -525px;
+        @media @phone {
+            margin-left: 150px;
+            padding-top: 25px;
+            padding-bottom: 40px;
+        }
+    }
+    a {
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        width: 10%;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        @media @phone {
+            width: 20%;
+            margin-right: 45px;
+            padding-top: 50px;
+        }
+    }
+}

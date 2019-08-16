@@ -1,3 +1,18 @@
+
+header {
+  width: 60%;
+  margin-left: 275px;
+  text-align: justify;
+  padding: 20px;
+  border-bottom: 2px dashed @navigation-border;
+  @media @phone {
+    width: 95%;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 .home {
 
   .content-section {
@@ -5,17 +20,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+    @media @phone {
+      flex-direction: column;
+      margin-left: 40px;
+      text-align: justify;
+      margin-right: 40px;
+    }  
+  
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+        width: 100%;
+        flex-direction: column;
+      }    
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone {
+        width: 100%;
+      } 
 
       img {
         border-radius: 10px;
@@ -26,7 +52,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @phone {
+     display: flex;
+     flex-direction: column-reverse;
+    } 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -52,10 +81,22 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @phone {
+      flex-direction: column;
+    } 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .button(#008080,white);
+      @media @phone {
+        margin-left: 135px;
+      }
+      }
+      @media @phone {
+        width: 90%;
+        text-align: center;
+      }
     }
   }
 }// home
